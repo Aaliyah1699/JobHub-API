@@ -22,13 +22,13 @@ paths:
                             allOf:
                                 - $ref: "#/components/schemas/RegisterUserRequest"
                                 - example:
-                                      name: Lei'lani
-                                      email: bigpeanut@gmail.com
-                                      password: peanut
+                                      name: Jane Doe
+                                      email: janedoe567@gmail.com
+                                      password: password123
                         example:
-                            name: Lei'lani
-                            email: bigpeanut@gmail.com
-                            password: peanut
+                            name: Jane Doe
+                            email: janedoe567@gmail.com
+                            password: password123
                 required: true
             responses:
                 "200":
@@ -51,11 +51,11 @@ paths:
                             allOf:
                                 - $ref: "#/components/schemas/UserLoginRequest"
                                 - example:
-                                      email: bigpeanut@gmail.com
-                                      password: peanut
+                                      email: janedoe567@gmail.com
+                                      password: password123
                         example:
-                            email: bigpeanut@gmail.com
-                            password: peanut
+                            email: janedoe567@gmail.com
+                            password: password123
                 required: true
             responses:
                 "200":
@@ -78,11 +78,11 @@ paths:
                             allOf:
                                 - $ref: "#/components/schemas/CreatejobRequest"
                                 - example:
-                                      company: Boss Baby
-                                      position: Chief of staff
+                                      company: Large company
+                                      position: Software Engineer
                         example:
-                            company: Boss Baby
-                            position: Chief of staff
+                            company: Large Company
+                            position: Software Engineer
                 required: true
             responses:
                 "200":
@@ -126,10 +126,10 @@ paths:
                             allOf:
                                 - $ref: "#/components/schemas/UpdatejobRequest"
                                 - example:
-                                      company: Amazon
+                                      company: Large company
                                       position: Software Engineer
                         example:
-                            company: Amazon
+                            company: Large company
                             position: Software Engineer
                 required: true
             responses:
@@ -182,9 +182,9 @@ components:
                 password:
                     type: string
             example:
-                name: Lei'lani
-                email: bigpeanut@gmail.com
-                password: peanut
+                name: Name
+                email: Email@gmail.com
+                password: password123
         UserLoginRequest:
             title: UserLoginRequest
             required:
@@ -197,8 +197,8 @@ components:
                 password:
                     type: string
             example:
-                email: bigpeanut@gmail.com
-                password: peanut
+                email: Email@gmail.com
+                password: password123
         CreatejobRequest:
             title: CreatejobRequest
             required:
@@ -211,8 +211,8 @@ components:
                 position:
                     type: string
             example:
-                company: Boss Baby
-                position: Chief of staff
+                company: Large company
+                position: Software Engineer
         UpdatejobRequest:
             title: UpdatejobRequest
             required:
@@ -225,7 +225,7 @@ components:
                 position:
                     type: string
             example:
-                company: Amazon
+                company: Large company
                 position: Software Engineer
     securitySchemes:
         bearer:
