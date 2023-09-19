@@ -1,12 +1,5 @@
 # Jobs API
-
-**User Model**
-
-Email Validation Regex
-
-```regex
-/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-```
+check it out [here](https://jobs-api-docs-4s4o.onrender.com)
 
 **Register User**
 
