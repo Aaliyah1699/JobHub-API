@@ -1,8 +1,8 @@
 openapi: 3.0.0
 info:
-    title: Jobs API
+    title: JobHub API
     contact: {}
-    version: "1.0"
+    version: '1.0'
 servers:
     - url: https://jobs-api-docs-4s4o.onrender.com/api/v1
       variables: {}
@@ -15,24 +15,24 @@ paths:
             operationId: RegisterUser
             parameters: []
             requestBody:
-                description: ""
+                description: ''
                 content:
                     application/json:
                         schema:
                             allOf:
-                                - $ref: "#/components/schemas/RegisterUserRequest"
+                                - $ref: '#/components/schemas/RegisterUserRequest'
                                 - example:
-                                      name: Jane Doe
-                                      email: janedoe567@gmail.com
-                                      password: password123
+                                      name: Bret Hitman Hart
+                                      email: thehitman@gmail.com
+                                      password: sharpshooter
                         example:
-                            name: Jane Doe
-                            email: janedoe567@gmail.com
-                            password: password123
+                            name: Bret Hitman Hart
+                            email: thehitman@gmail.com
+                            password: sharpshooter
                 required: true
             responses:
-                "200":
-                    description: ""
+                '200':
+                    description: ''
                     headers: {}
             deprecated: false
             security: []
@@ -44,22 +44,22 @@ paths:
             operationId: UserLogin
             parameters: []
             requestBody:
-                description: ""
+                description: ''
                 content:
                     application/json:
                         schema:
                             allOf:
-                                - $ref: "#/components/schemas/UserLoginRequest"
+                                - $ref: '#/components/schemas/UserLoginRequest'
                                 - example:
-                                      email: janedoe567@gmail.com
-                                      password: password123
+                                      email: thehitman@gmail.com
+                                      password: sharpshooter
                         example:
-                            email: janedoe567@gmail.com
-                            password: password123
+                            email: thehitman@gmail.com
+                            password: sharpshooter
                 required: true
             responses:
-                "200":
-                    description: ""
+                '200':
+                    description: ''
                     headers: {}
             deprecated: false
             security: []
@@ -71,22 +71,22 @@ paths:
             operationId: Createjob
             parameters: []
             requestBody:
-                description: ""
+                description: ''
                 content:
                     application/json:
                         schema:
                             allOf:
-                                - $ref: "#/components/schemas/CreatejobRequest"
+                                - $ref: '#/components/schemas/CreatejobRequest'
                                 - example:
                                       company: Large company
-                                      position: Software Engineer
+                                      position: Wrestler
                         example:
                             company: Large Company
-                            position: Software Engineer
+                            position: Wrestler
                 required: true
             responses:
-                "200":
-                    description: ""
+                '200':
+                    description: ''
                     headers: {}
             deprecated: false
             security:
@@ -98,8 +98,8 @@ paths:
             operationId: Getalljobs
             parameters: []
             responses:
-                "200":
-                    description: ""
+                '200':
+                    description: ''
                     headers: {}
             deprecated: false
             security:
@@ -119,22 +119,22 @@ paths:
             operationId: Updatejob
             parameters: []
             requestBody:
-                description: ""
+                description: ''
                 content:
                     application/json:
                         schema:
                             allOf:
-                                - $ref: "#/components/schemas/UpdatejobRequest"
+                                - $ref: '#/components/schemas/UpdatejobRequest'
                                 - example:
                                       company: Large company
-                                      position: Software Engineer
+                                      position: Wrestler
                         example:
                             company: Large company
-                            position: Software Engineer
+                            position: Wrestler
                 required: true
             responses:
-                "200":
-                    description: ""
+                '200':
+                    description: ''
                     headers: {}
             deprecated: false
             security:
@@ -146,8 +146,8 @@ paths:
             operationId: Getjob
             parameters: []
             responses:
-                "200":
-                    description: ""
+                '200':
+                    description: ''
                     headers: {}
             deprecated: false
             security:
@@ -159,8 +159,8 @@ paths:
             operationId: Deletejob
             parameters: []
             responses:
-                "200":
-                    description: ""
+                '200':
+                    description: ''
                     headers: {}
             deprecated: false
             security:
@@ -184,7 +184,7 @@ components:
             example:
                 name: Name
                 email: Email@gmail.com
-                password: password123
+                password: sharpshooter
         UserLoginRequest:
             title: UserLoginRequest
             required:
@@ -198,7 +198,7 @@ components:
                     type: string
             example:
                 email: Email@gmail.com
-                password: password123
+                password: sharpshooter
         CreatejobRequest:
             title: CreatejobRequest
             required:
@@ -212,7 +212,7 @@ components:
                     type: string
             example:
                 company: Large company
-                position: Software Engineer
+                position: Wrestler
         UpdatejobRequest:
             title: UpdatejobRequest
             required:
@@ -226,7 +226,7 @@ components:
                     type: string
             example:
                 company: Large company
-                position: Software Engineer
+                position: Wrestler
     securitySchemes:
         bearer:
             type: http
@@ -234,6 +234,6 @@ components:
 security: []
 tags:
     - name: Auth
-      description: ""
+      description: ''
     - name: Jobs
-      description: ""
+      description: ''
