@@ -1,37 +1,15 @@
-# Jobs API
+# JobHub API - Your Job Management Solution
+JobHub API simplifies job management and user authentication. It's powered by MongoDB, Express, and Node.js, with comprehensive documentation using Swagger. Also, the added security of JWT.
 
-**User Model**
+## Key features include:
 
-Email Validation Regex
+**User Authentication**: Register and log in users securely.
+**Job Management**: Create, retrieve, update, and delete job listings effortlessly.
+Explore the API, and let JobHub streamline your job-related tasks
 
-```regex
-/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-```
+**MongoDB**: A NoSQL database for storing job data efficiently.
+**Express**: A web application framework for building robust APIs.
+**Node.js**: A runtime environment for executing JavaScript on the server.
+**Swagger API**: For comprehensive API documentation.
 
-**Register User**
-
--   Validate - name, email, password - with Mongoose
--   Hash Password (with bcryptjs)
--   Save User
--   Generate Token
--   Send Response with Token
-
-**Login User**
-
--   Validate - email, password
--   Find User
--   Compare Passwords
--   generate Token
--   Send Response with Token
-
-    **Mongoose Errors**
-
--   Validation Errors
--   Duplicate (Email)
--   Cast Error
-
-**Security**
-
--   helmet
--   cors
--   express-rate-limit
+Custom errors, middleware, models, controllers, and routes for organized code structure.
