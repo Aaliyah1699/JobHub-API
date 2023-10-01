@@ -2,6 +2,8 @@
 
 JobHub API simplifies job management and user authentication. It's powered by MongoDB, Express, and Node.js, with comprehensive documentation using Swagger. Also, the added security of JWT. check it out [here](https://jobs-api-docs-4s4o.onrender.com)
 
+Feel free to check out my [Portfolio](https://aaliyahm-portfolio.netlify.app/) 🗂️
+
 ## Key features include:
 
 **User Authentication**: Register and log in users securely.
